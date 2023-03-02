@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 
 function Banner() {
   return (
-    <Container fluid className="bg-secondary">
+    <Container fluid className="bg-secondary py-5">
       <Container>
         <Row>
           <Col className="p-0" xs={12} lg={6}>
