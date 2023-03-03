@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 
 function Technology() {
   return (
-    <Container fluid className="py-5  bg-secondary">
+    <Container fluid className="py-5  bg-secondary" id="technology">
       <Container>
         <h2>Tecnologia</h2>
         <Row className="gx-5">

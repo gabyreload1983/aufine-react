@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Company() {
   return (
-    <Container className="py-5">
+    <Container className="py-5" id="company">
       <Row>
         <Col>
           <h2>EMPRESA</h2>

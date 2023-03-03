@@ -19,9 +19,10 @@ function NavBar(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#aboutus">EMPRESA</Nav.Link>
+            <Nav.Link href="#company">EMPRESA</Nav.Link>
+            <Nav.Link href="#technology">TECNOLOGIA</Nav.Link>
             <Nav.Link href="#tires">NEUMATICOS</Nav.Link>
-            <Nav.Link href="#garantia">GARANTIA</Nav.Link>
+            <Nav.Link href="#warranty">GARANTIA</Nav.Link>
             <Nav.Link href="#contact">CONTACTO</Nav.Link>
           </Nav>
         </Navbar.Collapse>
