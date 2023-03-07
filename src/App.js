@@ -4,6 +4,7 @@ import Company from "./components/Company";
 import NavBar from "./components/NavBar";
 import Technology from "./components/Technology";
 import TireList from "./components/TireList";
+import Whatsapp from "./components/Whatsapp";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Company />
       <Technology />
       <TireList />
+      <Whatsapp />
     </>
   );
 }
