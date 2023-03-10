@@ -14,29 +14,29 @@ function Tire({ tire }) {
         <table className="table table-sm table-bordered">
           <thead>
             <tr className="table-primary">
-              <th scope="col">SIZE</th>
+              <th scope="col">TALLE</th>
               <th scope="col">P.R.</th>
-              <th scope="col">LOAD RANGE</th>
-              <th scope="col">STYLE</th>
-              <th scope="col">LOAD INDEX</th>
+              <th scope="col">RANGO DE CARGA</th>
+              <th scope="col">ESTILO</th>
+              <th scope="col">INDICE DE CARGA</th>
               <th scope="col" colSpan="2">
-                TREAD DEPTH
+                PROFUNDIDAD DE BANDA
               </th>
 
-              <th scope="col">MAX SPEED</th>
-              <th scope="col">SPEED RATINGAD</th>
+              <th scope="col">VELOCIDAD MAX</th>
+              <th scope="col">INDICE DE VELOCIDAD</th>
               <th scope="col" colSpan="2">
-                OVERALL DIAMETER
+                DIÁMETRO TOTAL
               </th>
               <th scope="col" colSpan="2">
-                OVERALL WIDTH
+                ANCHO PROMEDIO
               </th>
-              <th scope="col">STANDARD RIM</th>
+              <th scope="col">LLANTA ESTÁNDAR</th>
               <th scope="col" colSpan="4">
-                MAX TIE LOAD SIMPLE
+                CARGA MÁXIMA DE AMARRE SIMPLE
               </th>
               <th scope="col" colSpan="4">
-                MAX TIE LOAD DUAL
+                CARGA MÁXIMA DE AMARRE DOBLE
               </th>
             </tr>
             <tr className="table-primary">
