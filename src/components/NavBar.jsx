@@ -22,6 +22,7 @@ function NavBar(props) {
             <Nav.Link href="#company">EMPRESA</Nav.Link>
             <Nav.Link href="#technology">TECNOLOGIA</Nav.Link>
             <Nav.Link href="#tires">NEUMATICOS</Nav.Link>
+            <Nav.Link href="#recommendations">RECOMENDACIONES</Nav.Link>
             <Nav.Link href="#warranty">GARANTIA</Nav.Link>
             <Nav.Link href="#contact">CONTACTO</Nav.Link>
           </Nav>
