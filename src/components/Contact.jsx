@@ -50,69 +50,71 @@ function Contact(props) {
       });
   };
   return (
-    <Container className="py-5" id="contact">
-      <h2 className="text-center">
-        C
-        {isSendingEmail ? (
-          <Spinner animation="border" variant="primary" />
-        ) : (
-          "0"
-        )}
-        NTACT
-        {isSendingEmail ? (
-          <Spinner animation="border" variant="primary" />
-        ) : (
-          "0"
-        )}
-      </h2>
-
-      <div className="row justify-content-center">
-        <div className="col-lg-6">
-          <Form ref={form} onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control
-                type="text"
-                placeholder="Nombre y Apellido"
-                name="name"
-                required
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="email"
-                placeholder="Email"
-                name="email"
-                required
-              />
-            </Form.Group>
-
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Control
-                as="textarea"
-                rows={7}
-                placeholder="Mensaje"
-                name="message"
-                required
-              />
-            </Form.Group>
-            <Button variant="primary w-100" type="submit">
-              Enviar
-            </Button>
-          </Form>
-
-          {answerForm.display && (
-            <Alert
-              variant={answerForm.error ? "warning" : "primary"}
-              className="mt-3"
-            >
-              {answerForm.message}
-            </Alert>
+    <Container fluid className="py-5  bg-secondary" id="contact">
+      <Container>
+        <h2 className="text-center">
+          C
+          {isSendingEmail ? (
+            <Spinner animation="border" variant="primary" />
+          ) : (
+            "0"
           )}
+          NTACT
+          {isSendingEmail ? (
+            <Spinner animation="border" variant="primary" />
+          ) : (
+            "0"
+          )}
+        </h2>
+
+        <div className="row justify-content-center">
+          <div className="col-lg-6">
+            <Form ref={form} onSubmit={sendEmail}>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control
+                  type="text"
+                  placeholder="Nombre y Apellido"
+                  name="name"
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Control
+                  as="textarea"
+                  rows={7}
+                  placeholder="Mensaje"
+                  name="message"
+                  required
+                />
+              </Form.Group>
+              <Button variant="primary w-100" type="submit">
+                Enviar
+              </Button>
+            </Form>
+
+            {answerForm.display && (
+              <Alert
+                variant={answerForm.error ? "warning" : "primary"}
+                className="mt-3"
+              >
+                {answerForm.message}
+              </Alert>
+            )}
+          </div>
         </div>
-      </div>
+      </Container>
     </Container>
   );
 }
