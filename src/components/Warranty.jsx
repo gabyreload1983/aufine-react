@@ -56,13 +56,13 @@ function Warranty(props) {
         {isSendingEmail ? (
           <Spinner animation="border" variant="primary" />
         ) : (
-          "0"
+          "O"
         )}
         RMULARI
         {isSendingEmail ? (
           <Spinner animation="border" variant="primary" />
         ) : (
-          "0"
+          "O"
         )}{" "}
         GARANTIA
       </h2>

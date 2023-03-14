@@ -57,13 +57,13 @@ function Contact(props) {
           {isSendingEmail ? (
             <Spinner animation="border" variant="primary" />
           ) : (
-            "0"
+            "O"
           )}
           NTACT
           {isSendingEmail ? (
             <Spinner animation="border" variant="primary" />
           ) : (
-            "0"
+            "O"
           )}
         </h2>
 
