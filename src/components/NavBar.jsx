@@ -7,7 +7,7 @@ function NavBar(props) {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="#" onClick={() => window.scroll("top")}>
           {" "}
           <img
             alt=""
