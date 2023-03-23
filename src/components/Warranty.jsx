@@ -13,6 +13,10 @@ function Warranty(props) {
     message: "",
   });
 
+  const serviceID = "service_lesvcma";
+  const templateID = "template_fwpf1wy";
+  const publicKey = "pVOvAjMtRyVk0jHsI";
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,12 +25,7 @@ function Warranty(props) {
     setAnswerForm("");
 
     emailjs
-      .sendForm(
-        "service_2o8eimj",
-        "template_6g962ec",
-        form.current,
-        "IKea0Z0eum6qgyMT-"
-      )
+      .sendForm(serviceID, templateID, form.current, publicKey)
       .then(
         (result) => {
           setAnswerForm({
@@ -86,19 +85,47 @@ function Warranty(props) {
                 required
               />
             </Form.Group>
-
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
+            <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control
-                as="textarea"
-                rows={7}
-                placeholder="Mensaje"
-                name="message"
+                type="text"
+                placeholder="Direccion"
+                name="address"
                 required
               />
             </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control
+                type="number"
+                placeholder="Telefono"
+                name="phone"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control
+                type="date"
+                placeholder="Fecha de compra"
+                name="date"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control
+                type="text"
+                placeholder="Marca y Modelo"
+                name="brandModel"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Control
+                type="text"
+                placeholder="Detalle del motivo de su reclamo"
+                name="detail"
+                required
+              />
+            </Form.Group>
+
             <Button variant="primary w-100" type="submit">
               Enviar
             </Button>

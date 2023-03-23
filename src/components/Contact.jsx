@@ -13,6 +13,10 @@ function Contact(props) {
     message: "",
   });
 
+  const serviceID = "service_lesvcma";
+  const templateID = "template_bmlimnp";
+  const publicKey = "pVOvAjMtRyVk0jHsI";
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,12 +25,7 @@ function Contact(props) {
     setAnswerForm("");
 
     emailjs
-      .sendForm(
-        "service_2o8eimj",
-        "template_95wqv5e",
-        form.current,
-        "IKea0Z0eum6qgyMT-"
-      )
+      .sendForm(serviceID, templateID, form.current, publicKey)
       .then(
         (result) => {
           setAnswerForm({

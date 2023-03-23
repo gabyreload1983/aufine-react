@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import Recommendations from "./components/Recommendations";
 import Technology from "./components/Technology";
 import TireList from "./components/TireList";
+import Warranty from "./components/Warranty";
 import WarrantyDetail from "./components/WarrantyDetail";
 import Whatsapp from "./components/Whatsapp";
 
@@ -20,6 +21,7 @@ function App() {
       <TireList />
       <Recommendations />
       <WarrantyDetail />
+      <Warranty />
       <Contact />
       <Whatsapp />
       <Footer />

@@ -73,7 +73,7 @@ function WarrantyDetail() {
             de vida útil) que, aplicado al precio actual de lista del producto
             determina el valor de Ajuste.
           </p>
-          <p className="fs-3">Garantía de Neumáticos y Política de Ajustes</p>
+          <p className="fs-4">Garantía de Neumáticos y Política de Ajustes</p>
         </Col>
       </Row>
     </Container>
