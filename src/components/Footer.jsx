@@ -8,16 +8,16 @@ function Footer() {
   return (
     <Container fluid className="py-5 bg-dark text-white ">
       <Row>
-        <Col xs={6} className="d-flex justify-content-center mb-5">
+        <Col xs={12} md={6} className="d-flex justify-content-center mb-5">
           <Navbar.Brand href="#" onClick={() => window.scroll("top")}>
             <Image
-              height={50}
+              height={40}
               src={require("../assets/images/logo.png")}
               alt=""
             />
           </Navbar.Brand>
         </Col>
-        <Col xs={6} className="d-flex justify-content-center">
+        <Col xs={12} md={6} className="d-flex justify-content-center">
           <Row>
             <Col>
               <Nav.Link
