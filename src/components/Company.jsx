@@ -41,12 +41,12 @@ function Company() {
           </p>
           <p>
             Entre la carretera y el vehículo, los conductores solo pueden
-            confiar en los neumáticos, el neumático AUFINE es para escolta de
-            seguridad. Entre los clientes y la marca, los mercados solo creen en
-            productos y servicios de alta calidad, AUFINE tire brinda a los
-            clientes confianza a largo plazo.
+            confiar en los neumáticos, el neumático AUFINE brinda seguridad.
+            Entre los clientes y la marca, los mercados solo creen en productos
+            y servicios de alta calidad, AUFINE tire brinda a los clientes
+            confianza a largo plazo.
           </p>
-          <p>NEUMÁTICO AUFINO. ¡PLACER INFINITO HACIA ADELANTE!</p>
+          <p>NEUMÁTICO AUFINE. ¡PLACER INFINITO HACIA ADELANTE!</p>
         </Col>
       </Row>
     </Container>
