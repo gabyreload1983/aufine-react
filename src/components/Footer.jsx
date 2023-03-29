@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillEnvelopeFill, BsWhatsapp } from "react-icons/bs";
+import { SiGooglemaps } from "react-icons/si";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { Col, Image, Navbar, Row } from "react-bootstrap";
@@ -37,6 +38,17 @@ function Footer() {
               >
                 <BsWhatsapp size={30} className="me-3" />
                 <span>54347612345678</span>
+              </Nav.Link>
+
+              <Nav.Link
+                className="mb-4"
+                href={
+                  "https://www.google.com/maps/place/TRANSPORTES+LBB+SRL/@-32.766566,-60.7457001,15z/data=!4m2!3m1!1s0x0:0xd55e0612717db28?sa=X&ved=2ahUKEwjSyYOjgID-AhXDjJUCHYAvDWAQ_BJ6BAhgEAg"
+                }
+                target="_blank"
+              >
+                <SiGooglemaps size={30} className="me-3" />
+                <span>Google Maps</span>
               </Nav.Link>
             </Col>
           </Row>
