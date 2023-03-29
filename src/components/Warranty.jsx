@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Container, Spinner } from "react-bootstrap";
+import { Container, FloatingLabel, Spinner } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
@@ -69,61 +69,120 @@ function Warranty(props) {
       <div className="row justify-content-center">
         <div className="col-lg-6">
           <Form ref={form} onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control
-                type="text"
-                placeholder="Nombre y Apellido"
-                name="name"
-                required
-              />
+            <Form.Group className="mb-3" controlId="formBasicName">
+              <FloatingLabel
+                controlId="floatingName"
+                label="Nombre y Apellido"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Nombre y Apellido"
+                  name="name"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="email"
-                placeholder="Email"
-                name="email"
-                required
-              />
+              <FloatingLabel
+                controlId="floatingEmail"
+                label="Email"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="text"
-                placeholder="Direccion"
-                name="address"
-                required
-              />
+            <Form.Group className="mb-3" controlId="formBasicAddress">
+              <FloatingLabel
+                controlId="floatingAddress"
+                label="Direccion"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Direccion"
+                  name="address"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="number"
-                placeholder="Telefono"
-                name="phone"
-                required
-              />
+            <Form.Group className="mb-3" controlId="formBasicPhone">
+              <FloatingLabel
+                controlId="floatingPhone"
+                label="Telefono"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="number"
+                  placeholder="Telefono"
+                  name="phone"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="date"
-                placeholder="Fecha de compra"
-                name="date"
-                required
-              />
+
+            <Form.Group className="mb-3" controlId="formBasicInvoice">
+              <FloatingLabel
+                controlId="floatingInvoice"
+                label="Numero de Factura"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Numero de Factura"
+                  name="invoice"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="text"
-                placeholder="Marca y Modelo"
-                name="brandModel"
-                required
-              />
+
+            <Form.Group className="mb-3" controlId="formBasicDate">
+              <FloatingLabel
+                controlId="floatingDate"
+                label="Fecha de Compra"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="date"
+                  placeholder="Fecha de compra"
+                  name="date"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="text"
-                placeholder="Detalle del motivo de su reclamo"
-                name="detail"
-                required
-              />
+
+            <Form.Group className="mb-3" controlId="formBasicModel">
+              <FloatingLabel
+                controlId="floatingModel"
+                label="Modelo"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Modelo"
+                  name="model"
+                  required
+                />
+              </FloatingLabel>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicDetail">
+              <FloatingLabel
+                controlId="floatingDetail"
+                label="Detalle del motivo de su reclamo"
+                className="mb-3"
+              >
+                <Form.Control
+                  as="textarea"
+                  style={{ height: 200 }}
+                  name="detail"
+                  required
+                />
+              </FloatingLabel>
             </Form.Group>
 
             <Button variant="primary w-100" type="submit">
