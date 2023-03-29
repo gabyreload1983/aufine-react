@@ -32,7 +32,7 @@ function Footer() {
               <Nav.Link
                 className="mb-4"
                 href={
-                  "https://wa.me/+54347612345678/?text=Hola!!! te contacto desde la web,"
+                  "https://wa.me/+543417690165/?text=Hola!!! te contacto desde la web,"
                 }
                 target="_blank"
               >
